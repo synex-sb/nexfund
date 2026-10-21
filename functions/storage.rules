@@ -1,7 +1,0 @@
-rules_version = '2';
-service firebase.storage {
-  match /b/{bucket}/o {
-    // Default deny. Do not enable NID/video uploads until a lawful, secure workflow is reviewed.
-    match /{allPaths=**} { allow read, write: if false; }
-  }
-}
